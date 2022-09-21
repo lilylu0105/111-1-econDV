@@ -1,0 +1,60 @@
+#ctrl+alt+i
+```{r}
+
+```
+
+
+
+```{r}
+geom_point(
+  aes(
+    fill=country,
+    stroke=region
+  ),
+  alpha
+)
+```
+
+```{r}
+gemo_point( )+
+  geom_line( )
+```
+
+```{r}
+data.frame(
+  country=c("J","J","J","usa","usa"),
+  threeValues= c(100, 50, 23)
+  
+)
+```
+
+
+#疊三張圖一起
+```{r}
+geom_point( )+
+  geom_point( )+
+  geom_point( )
+```
+
+```{r}
+geom_poinit(
+  aes(
+    alpha=IsOECD
+  )
+)
+```
+
+```{r}
+geom_point(
+  aes(alpha)
+)+
+  geom_point(
+    aes(alpha)
+  )
+```
+#兩個圖通常會選下面寫法
+```{r}
+geom_point(alpha, )+
+  geom_point(alpha, )
+```
+
