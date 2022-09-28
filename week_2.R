@@ -5,9 +5,6 @@ googlesheets4::read_sheet(
   sheet="data 1"
 ) -> data1
 
-ggplot(
-  data=data1
-)+
   geom_line(
     mapping=aes(
       x=Time,

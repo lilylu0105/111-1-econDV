@@ -13,7 +13,8 @@ ggplot(
         x=`Total Effect`,
         y=Characteristic,
         color=Country
-        )
+        ),
+      size=0.3
     )+
   geom_point(
     aes(
@@ -24,8 +25,8 @@ ggplot(
       fill = Country,
   ),
   shape = 21,
-  alpha=0.1,
+  alpha=0.2,
   stroke = 1
   )
-)
+
  
