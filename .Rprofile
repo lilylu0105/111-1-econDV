@@ -20,3 +20,24 @@ ggenv$gg <- list(
   aes = econDV2::ggaes
 )
 attach(ggenv)
+
+
+Plot <- function(data) {
+  plot <- list(
+    data = data,
+    ggplot = NULL,
+    geoms = NULL,
+    make = function() {
+      plot$ggplot + plot$geoms
+    },
+    save = function() {
+      saveRDS(plot, filename)
+      message(paste("The plot is saved at ", filename))
+    }
+  )
+  return(plot)
+}
+
+myTools = new.env()
+myTools$Plot <- Plot
+attach(myTools)
