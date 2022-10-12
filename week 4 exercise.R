@@ -10,7 +10,7 @@ ggplot(
   data=df,
   aes(
     fill=isOPEC
-    ,width = `Volumn`*0.00005
+    ,width = Volumn*0.00005
   )
 )+
   geom_col(
@@ -26,13 +26,13 @@ ggplot(
     ),
     linetype=5,
     alpha=0.2,
-    linetypes="longdash"
   )+
   geom_text(
     aes(
       label= country,
       x=country,
-      y=shareProfitable
+      y=shareProfitable,
+      vjust = -1
     )
   )+
   geom_hline(yintercept = 0)
